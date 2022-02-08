@@ -1,0 +1,69 @@
+| Run on Mon Nov 21 01:32:53 2021
+|
+|Input file:
+|--------------------------------------------------------------
+|Input file for running entropy calculations using NMode
+|&general
+|   endframe=50, keep_files=2,
+|/
+|&nmode
+|   nmstartframe=1, nmendframe=50,
+|   nminterval=5, nmode_igb=1, nmode_istrng=0.1,
+|/
+|
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Solvated complex topology file:  a.prmtop
+|Complex topology file:           complex.prmtop
+|Receptor topology file:          receptor.prmtop
+|Ligand topology file:            ligand.prmtop
+|
+|Receptor mask:                  ":1-306"
+|Ligand mask:                    ":307"
+|Ligand residue name is "UNK"
+|
+|Calculations performed using 50.0 complex frames.
+|NMODE calculations performed using 10.8 frames.
+|
+|All units are reported in kcal/mole.
+|All entropy results have units kcal/mol (Temperature is 298.15 K).
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ENTROPY RESULTS (HARMONIC APPROXIMATION) CALCULATED WITH NMODE:
+
+Complex:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               17.0130                0.0000              0.0000
+Rotational                  17.7429                0.0033              0.0011
+Vibrational               3745.0275                6.2162              1.9657
+Total                     3779.7833                6.2140              1.9650
+
+Receptor:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               17.0053                0.0000              0.0000
+Rotational                  17.7351                0.0040              0.0013
+Vibrational               3725.1792                7.7257              2.4431
+Total                     3759.9196                7.7257              2.4431
+
+Ligand:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               12.7713                0.0000              0.0000
+Rotational                  10.2045                0.0036              0.0011
+Vibrational                 19.9878                0.0376              0.0119
+Total                       42.9637                0.0412              0.0130
+
+Differences (Complex - Receptor - Ligand):
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational              -12.7635                0.0000              0.0000
+Rotational                 -10.1967                0.0049              0.0015
+Vibrational                 -0.1395                6.4631              2.0438
+
+DELTA S total=             -23.1000                6.4635              2.0439
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
